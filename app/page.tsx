@@ -10,15 +10,19 @@ import { useState } from "react";
 
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header />
-      <main className="flex-1">
-        <HeroSection />
-        <FeaturesSection />
-        <ClientsSection />
-        <CtaSection />
+    <div className="flex min-h-screen flex-col justify-center items-center bg-black border-white">
+      <main className="flex flex-col justify-center items-center">
+        <Image
+          src="/logo-berlinwork.png"
+          alt="Logo"
+          width={256}
+          height={256}
+          className="rounded"
+        />
+        <h2 className="text-white text-lg font-bold">
+          Próximamente, una forma más dinámica de vestir a tu empresa.
+        </h2>
       </main>
-      <Footer />
     </div>
   );
 }
