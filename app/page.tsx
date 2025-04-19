@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ChevronRight, Menu, X } from "lucide-react";
-import LogoMarquee from "@/components/logo-marquee";
-import FeatureCard from "@/components/feature-card";
-import { useState } from "react";
+// import { Button } from "@/components/ui/button";
+// import { ChevronRight, Menu, X } from "lucide-react";
+// import LogoMarquee from "@/components/logo-marquee";
+// import FeatureCard from "@/components/feature-card";
+// import { useState } from "react";
 
 export default function LandingPage() {
   return (
