@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col justify-center items-center bg-black border-white">
-      <main className="flex flex-col justify-center items-center">
+      <main className="flex flex-col justify-center items-center px-4">
         <Image
           src="/logo-berlinwork.png"
           alt="Logo"
@@ -19,7 +19,7 @@ export default function LandingPage() {
           height={256}
           className="rounded"
         />
-        <h2 className="text-white text-lg font-bold">
+        <h2 className="text-white text-lg font-bold text-center">
           Próximamente, una forma más dinámica de vestir a tu empresa.
         </h2>
       </main>
