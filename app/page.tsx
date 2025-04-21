@@ -27,13 +27,13 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="relative w-[52px] h-[52px]">
           <Image
             src="/logo-berlinwork.png"
             alt="Logo"
-            width={64}
-            height={64}
-            className="rounded"
+            fill={true}
+            objectFit="cover"
+            className="rounded-full"
           />
         </div>
 
