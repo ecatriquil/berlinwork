@@ -1,14 +1,25 @@
-import { Palette, Shirt, Scissors, Truck, type LucideIcon } from "lucide-react"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import {
+  Palette,
+  Shirt,
+  Scissors,
+  Truck,
+  UserRound,
+  type LucideIcon,
+} from "lucide-react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface FeatureCardProps {
-  title: string
-  description: string
-  icon: string
+  title: string;
+  description: string;
+  icon: string;
 }
 
-export default function FeatureCard({ title, description, icon }: FeatureCardProps) {
-  const IconComponent = getIconComponent(icon)
+export default function FeatureCard({
+  title,
+  description,
+  icon,
+}: FeatureCardProps) {
+  const IconComponent = getIconComponent(icon);
 
   return (
     <Card className="h-full">
@@ -22,20 +33,22 @@ export default function FeatureCard({ title, description, icon }: FeatureCardPro
         <p className="text-muted-foreground">{description}</p>
       </CardContent>
     </Card>
-  )
+  );
 }
 
 function getIconComponent(iconName: string): LucideIcon {
   switch (iconName) {
     case "Palette":
-      return Palette
+      return Palette;
     case "Shirt":
-      return Shirt
+      return Shirt;
     case "Scissors":
-      return Scissors
+      return Scissors;
     case "Truck":
-      return Truck
+      return Truck;
+    case "User":
+      return UserRound;
     default:
-      return Palette
+      return Palette;
   }
 }

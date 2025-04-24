@@ -168,11 +168,12 @@ function HeroSection() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-0 items-center">
           <div className="space-y-6 lg:pr-12 relative z-10">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Indumentaria empresarial que refleja tu identidad
+              Hacemos que vestir a tu empresa sea fácil.
             </h1>
             <p className="max-w-[600px] text-muted-foreground text-lg md:text-xl">
-              Diseñamos y fabricamos ropa corporativa personalizada que destaca
-              la imagen de tu empresa y fortalece tu marca.
+              Proveemos indumentaria y calzado de trabajo funcional y duradero
+              con la identidad de tu negocio.{" "}
+              <b> Nosotros nos encargamos de todo.</b>
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
@@ -208,28 +209,33 @@ function HeroSection() {
 
 function FeaturesSection() {
   const features = [
+    // {
+    //   title: "Diseño Personalizado",
+    //   description:
+    //     "Creamos diseños adaptados a la identidad visual de tu empresa. ",
+    //   icon: "Palette",
+    // },
     {
-      title: "Diseño Personalizado",
+      title: "Atención personalizada",
       description:
-        "Creamos diseños exclusivos adaptados a la identidad visual de tu empresa, con atención a cada detalle.",
-      icon: "Palette",
+        "Buscamos soluciones adaptadas a tus necesidades y las de tu empresa. ",
+      icon: "User",
     },
     {
-      title: "Materiales Premium",
+      title: "Calidad garantizada",
       description:
         "Utilizamos telas de alta calidad que garantizan durabilidad, comodidad y una apariencia profesional.",
       icon: "Shirt",
     },
     {
-      title: "Bordado de Precisión",
-      description:
-        "Aplicamos técnicas avanzadas de bordado para lograr acabados perfectos en logos y elementos gráficos.",
+      title: "Personalización",
+      description: "Bordados y estampados que comunican el estilo de tu marca",
       icon: "Scissors",
     },
     {
       title: "Entrega Rápida",
       description:
-        "Cumplimos con los plazos establecidos para que tengas tu indumentaria cuando la necesitas.",
+        "Contamos con stock local que nos permite tener disponibilidad inmediata y entrega rápida.",
       icon: "Truck",
     },
   ];
@@ -242,8 +248,8 @@ function FeaturesSection() {
             ¿Por qué elegirnos?
           </h2>
           <p className="mt-4 text-xl text-muted-foreground max-w-[700px] mx-auto">
-            Ofrecemos soluciones completas de indumentaria corporativa con los
-            más altos estándares de calidad
+            Nuestro servicio esta 100% enfocado en reducir al máximo el tiempo
+            que invierte tu empresa en vestir a sus equipos de trabajo.
           </p>
         </div>
 
@@ -370,15 +376,14 @@ function Footer() {
       <div className="container">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <div className="relative w-[52px] h-[52px]">
               <Image
-                src="/placeholder.svg?height=32&width=32"
+                src="/logo-berlinwork.png"
                 alt="Logo"
-                width={32}
-                height={32}
-                className="rounded"
+                fill={true}
+                objectFit="cover"
+                className="rounded-full"
               />
-              <span className="text-xl font-bold">EmpresaStyle</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Indumentaria empresarial personalizada de alta calidad para
@@ -466,17 +471,15 @@ function Footer() {
             <h3 className="font-medium mb-4">Contacto</h3>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                info@empresastyle.com
+                administracion@berlinwork.com.ar
               </li>
+              <li className="text-sm text-muted-foreground">+5492804183804</li>
               <li className="text-sm text-muted-foreground">
-                +54 11 1234-5678
-              </li>
-              <li className="text-sm text-muted-foreground">
-                Av. Corrientes 1234, CABA, Argentina
+                28 de Julio 235, Puerto Madryn.
               </li>
               <li className="flex gap-4 mt-4">
                 <Link
-                  href="#"
+                  href="https://facebook.com/berlinwork.arg"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   <svg
@@ -496,7 +499,7 @@ function Footer() {
                   <span className="sr-only">Facebook</span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://instagram.com/berlinwork.arg"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   <svg
@@ -518,7 +521,7 @@ function Footer() {
                   <span className="sr-only">Instagram</span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://linkedin.com/in/berlinwork"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   <svg
@@ -546,7 +549,7 @@ function Footer() {
 
         <div className="mt-10 pt-6 border-t text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} EmpresaStyle. Todos los derechos
+            © {new Date().getFullYear()} Berlinwork. Todos los derechos
             reservados.
           </p>
         </div>
